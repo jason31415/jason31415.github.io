@@ -1,0 +1,4 @@
+# prevent crawling in project and other folders
+User-agent: * 
+Disallow: /projects/
+Disallow: /other/
