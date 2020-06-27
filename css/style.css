@@ -23,7 +23,7 @@
 @media only screen and (max-width: 800px) {
     .logo {
         font-size: 65px;
-        white-space: auto;
+        white-space: nowrap;
     }
     #menu {
         margin-bottom: -40px;
@@ -144,6 +144,9 @@ a:hover, .menu-active {
         font-size: 50px;
         font-weight: 300;
     }
+    #project-tags {        
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -160,8 +163,8 @@ a:hover, .menu-active {
     }
     
     #project-entry {
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
         height: 65vh;
         position: relative;
         overflow: hidden;
@@ -182,7 +185,7 @@ a:hover, .menu-active {
         opacity: 0;
         transition: opacity .25s ease-in;
         line-height: 0;
-        font-size: 20px;
+        font-size: 5vw;
         font-weight: 500;
     }
     
@@ -196,6 +199,9 @@ a:hover, .menu-active {
         user-select: none;
         font-size: 60px;
         font-weight: 300;
+    }
+    #project-tags {        
+        font-size: 4vw;
     }
 }
 
@@ -220,7 +226,6 @@ a:hover, .menu-active {
 
 #project-tags {
     display: inline-block;
-    font-size: 20px;
     font-weight: 300;
     opacity: .75;
 }
