@@ -5,6 +5,7 @@ for (let image of images) {
 }
 
 function fadeImg () {
+    console.log("yolo");
   this.style.transition = "opacity 1s";
   this.style.opacity = "1";
 }
