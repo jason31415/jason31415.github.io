@@ -698,6 +698,7 @@ a:hover, .menu-active {
         display: inline-block;
         width: 100%;
         height: 20vh;
+        user-select: none;
     }
 
     .entry-wide .other-project-thumb {
