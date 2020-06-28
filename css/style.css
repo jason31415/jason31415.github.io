@@ -37,6 +37,7 @@
         white-space: nowrap;
     }
     #menu {
+        user-select: none;
         z-index: 3;
         top: -5px;
         margin-right: 10%;
