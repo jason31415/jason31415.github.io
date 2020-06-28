@@ -18,30 +18,103 @@
         font-weight: 300;
         line-height: 0;
     }
+    #menu input {
+        display: none;
+    }
+    #menu span {
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+    }
+    .full-menu {
+        display: none;
+        opacity: 0;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .logo {
-        font-size: 65px;
+        font-size: 10vw;
         white-space: nowrap;
     }
     #menu {
-        margin-bottom: -40px;
-        margin-right: 5%;
+        z-index: 3;
+        top: -5px;
+        margin-right: 10%;
+        position: relative;
     }
-    .menu-item {
-        line-height: 25px;
-        margin: 10px;
-        font-size: 25px;
+    #menu .menu-item {
+        display: none;
+    }
+    
+    #menu span {
+        user-select: none;
+        opacity: 1;
+        display: block;
+        width: 40px;
+        background-color: #00FEE2;
+        height: 4px;
+        margin-bottom: 10px;
+        transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu input {
+        position: absolute;
+        top: -3px;
+        left: 0;
+        width: 40px;
+        height: 37px;
+        margin: 0;
+        opacity: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+   
+    #menu input:checked ~ span:nth-of-type(1) {
+      transform: translateY(14px) rotate(45deg);
+    }
+    #menu input:checked ~ span:nth-of-type(2) {
+      opacity: 0;
+    }
+    #menu input:checked ~ span:nth-of-type(3) {
+      transform: translateY(-14px) rotate(-45deg);
+    }
+    
+    
+    .full-menu {
+        user-select: none;
+        width: 60%;
+        height: 100vh;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        direction: block;
+        background-color: rgba(255,255,255,0.9);
+        text-align: center;
+        padding: 20%;
+        opacity: 0;
+        display: none;
+        transition: opacity 0.5s ease-out;
+    }
+    .full-menu h2 {
+        color: red;
+        font-size: 8vw;
         font-weight: 300;
-        text-align: right;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .full-menu.menu-open {
+        opacity: 1;
     }
 }
+
+
 
 body {
     font-family: 'Open Sans', sans-serif;
     height: 100%;
     margin: 0;
+    width: 100%;
 
 }
 
@@ -66,9 +139,11 @@ a:hover, .menu-active {
     top: 0px;
     z-index: 2;
     background: linear-gradient(to bottom, rgba(255, 255, 255, .6) 0%, rgba(255, 255, 255, 0) 80%);
+    
 }
 
 #banner {
+    z-index: 3;
     user-select: none;
     padding-top: 40px;
     padding-left: 40px;
@@ -147,6 +222,9 @@ a:hover, .menu-active {
     #project-tags {        
         font-size: 20px;
     }
+    .project-thumb {
+        transform: translateX(-100px);
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -167,7 +245,6 @@ a:hover, .menu-active {
         margin-right: 10%;
         height: 65vh;
         position: relative;
-        overflow: hidden;
     }
     
     .project-text {
@@ -203,6 +280,9 @@ a:hover, .menu-active {
     #project-tags {        
         font-size: 4vw;
     }
+    .project-thumb {
+        transform: translateX(-50px);
+    }
 }
 
 .project-thumb {
@@ -211,7 +291,6 @@ a:hover, .menu-active {
     opacity: 0;
     z-index: -2;
     transition: opacity .75s, transform .5s ease-out, filter .5s;
-    transform: translateX(100px);
     object-fit: cover;
     object-position: center;
     display: block;
@@ -473,7 +552,7 @@ a:hover, .menu-active {
         height: 0px;
         display: inline-block;
         overflow: hidden;
-        box-shadow: 15px 15px #00FEE2;
+        box-shadow: 8px 8px #00FEE2;
         transition: width 1s, opacity 1s;
         vertical-align: top;
         text-align: right;
@@ -481,12 +560,12 @@ a:hover, .menu-active {
     .description-wrapper {
         width: 72vw;
         padding-top: 20px;
-        padding-bottom: 0px;
+        padding-bottom: 20px;
         padding-left: 20px;
     }
 
     .description-grow {
-        margin-left: calc(10% - 15px);
+        margin-left: calc(10% - 8px);
         width: 80%;
         opacity: 1;
         height: 100%; 
@@ -509,7 +588,7 @@ a:hover, .menu-active {
         margin-right: 10%;
         text-align: center;
         margin-bottom: 10%;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 400;
     }
     .content-block {
@@ -523,7 +602,7 @@ a:hover, .menu-active {
     .col-left {
         display: inline-block;
         width: 47.5%;
-        transform: translateX(-200px);
+        transform: translateX(-100px);
         opacity: 0;
         transition: opacity 1s, transform 1s;
     }
@@ -532,7 +611,7 @@ a:hover, .menu-active {
         display: inline-block;
         float: right;
         width: 47.5%;
-        transform: translateX(200px);
+        transform: translateX(100px);
         opacity: 0;
         transition: opacity 1s, transform 1s;
     }
