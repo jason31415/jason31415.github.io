@@ -851,9 +851,11 @@ a:hover, .menu-active {
 #other-projects a {
     text-decoration: none;
     vertical-align: bottom;
-    line-height: 0px;
 }
-
+#other-projects a:hover {
+    text-decoration: none;
+    color: black;
+}
 .other-project-thumb {
     object-fit: cover;
     object-position: center;
@@ -882,7 +884,7 @@ a:hover, .menu-active {
     line-height: 0;
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
     
