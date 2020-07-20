@@ -742,7 +742,7 @@ a:hover, .menu-active {
     }
 
     .entry-wide {
-        width: 100%;
+        width: 95%;
         height: 25vh;
     }
 
@@ -837,11 +837,11 @@ a:hover, .menu-active {
 }
 
 #other-projects {
-    width: 90%;
+    width: 85%;
     position: relative;
     height: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
     text-align: left;
 }
 
