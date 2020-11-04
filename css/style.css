@@ -182,7 +182,6 @@ body {
 
 a:visited {
     color: black;
-    text-decoration-color: #00FEE2;
 }
 
 a {
@@ -227,6 +226,10 @@ a:hover, .menu-active {
     transform-origin: top left;
     font-weight: 400;
 }
+
+#logo a:visited {
+    text-decoration-color: #00FEE2;
+}
 #menu {
     display: inline-block;
     align-self: flex-end;
@@ -250,6 +253,7 @@ footer {
 footer a {
     text-decoration: underline;
 }
+footer a
 #signature {
     font-weight: 300;
     text-decoration: none;
