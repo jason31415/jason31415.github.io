@@ -2,65 +2,73 @@
 <html>
     <head>
         <title>Jason Pi</title>
-        <link rel="icon" href="/images/jp_logo.png">
+        <meta name="description" content="Hey, I'm Jason. I'm an industrial designer focused on designing and prototyping interactive devices.">
+        <link rel="icon" href="images/jp_logo.png">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-        <link rel ='stylesheet' type='text/css' href='/css/style.css'>
+        <link rel='stylesheet' type='text/css' href='/css/style.css'>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        <script type=text/javascript src="/js/about-other.js" defer></script>
+        <script type=text/javascript src="/js/menu.js" async></script>
     </head>
     <body>
-        <div id="parallax">
-            <div id="banner-wrapper">
-                <div id="banner">
-                    <a href="/index.html" class="logo">Jason Pi</a>
-                    <nav id="menu">
-                        <input type="checkbox" id="menu-hamburger"> 
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <h2 class="menu-item"><a href="/index.html">work</a></h2>
-                        <h2 class="menu-item"><a href="/other.html">other</a></h2>
-                        <h2 class="menu-item menu-active"><a href="/about.html">about</a></h2>
-                    </nav>
-                </div>
-                <div class="full-menu">
-                    <nav>
-                        <h2 class="menu-item"><a href="/index.html">work</a></h2>
-                        <h2 class="menu-item"><a href="/other.html">other</a></h2>
-                        <h2 class="menu-item menu-active"><a href="/about.html">about</a></h2>
-                    </nav>
-                </div>
-            </div>
         
-        
-            <div id="parallax-base" class="parallax-layer">
-                <div id="bio-body">
-                    <div id="bio">
-                        <div class="bio-sect hello">
-                            <h1>Hey, I'm Jason. I recently graduated from the University of Michigan, where I studied <i>Industrial Design and minored in Computer Science</i>.</h1>
-                        </div>
-                        <div class="bio-sect"><h1>Utilizing my skills in <i>hardware prototyping, software development, and industrial design</i>, I ingrain a sense of <i>joy and novelty</i> into every aspect of my projects.</h1></div>
-                        <div class="bio-sect"><h1>In my spare time, you can find me drawing, dancing, or riding my bike.</h1></div>
-                        <div class="bio-sect"><p>You can contact me at jason-pi.jp@gmail.com</p></div>
-                    </div>
-                </div>
+        <div id="banner-wrapper">
+            <div id="banner">
+                <div id="logo"><a href="index.html">Jason Pi</a></div>
+                <nav id="menu">
+                    <input type="checkbox" id="menu-hamburger"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h2 class="menu-item"><a href="/index.html">work</a></h2>
+                    <h2 class="menu-item" ><a href="/other.html">other</a></h2>
+                    <h2 class="menu-item menu-active"><a href="/about.html">about</a></h2>
+                </nav>
             </div>
-            <div id="parallax-back" class="parallax-layer">
-                <div class="about-img">
-                    <img src="/images/bike/000241930016-min.jpg">
-                </div>
-                <div id="biking" class="about-img">
-                    <img src="/images/about/edited-28.jpg">
-                </div>
-                <div class="about-img">
-                    <img src="/images/about/biketour_2-18.jpg">
-                </div>
+            <div class="full-menu">
+                <nav>
+                    <h2 class="menu-item"><a href="/index.html">work</a></h2>
+                    <h2 class="menu-item"><a href="/other.html">other</a></h2>
+                    <h2 class="menu-item menu-active"><a href="/about.html ">about</a></h2>
+                </nav>
             </div>
         </div>
         
-        
-        
+        <div id="proj-gal">
+            <div id="about-test-header">
+                <div id="about-img" style="background-image: url(/images/about/edited-28.jpg)"></div>
+                <div id="about-hello">Hi, I'm Jason. As an interdisciplinary designer, my focus lies in bridging the gap between physical and digital experiences.</div>
+            </div>
+            <div id="about-test-bio">
+                <div class="about-test-sect">
+                    I recently graduated from the University of Michigan, where I studied Industrial Design and minored in Computer Science. With a technical background, I'm able to fully realize my ideas by designing every detail from the ground up.
+                </div>
+                <div class="about-test-sect">
+                    In my spare time, I'm usually watching a movie, dancing, or riding my bike.
+                </div>
+            </div>
+            <div class="hobbies">
+                    <div class="hobby-header">what I'm reading:</div>
+                the Myth of Sisyphus<br>
+                A People's History of the United States<br>
+                Dune Messiah
+            </div>
+            <div class="hobbies">
+                    <div class="hobby-header">recently watched:</div>
+                Ghostbusters (1984)<br>
+                Stranger than Paradise (1984)<br>
+                Casablanca (1942)
+            </div>
+        </div>
+        <footer>
+            <div class="footer-left">
+                <div id="signature">🚴🏼... designed by jason pi </div>
+                <div><a>linkedin</a></div>
+                <div><a>email</a></div>
+            </div>
+            
+            <div id="version">ver. 4.1</div>
+        </footer>
     </body>
     
 </html>

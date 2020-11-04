@@ -163,6 +163,7 @@ function toggleMenu() {
         document.body.style.overflowY = "hidden";
     }
     else {
+        
         document.getElementsByClassName("full-menu")[0].classList.remove("menu-open");
         document.getElementsByClassName("full-menu")[0].style.display = "none";
         document.body.style.overflowY = "auto";
