@@ -177,7 +177,6 @@ body {
     height: 100%;
     margin: 0;
     width: 100%;
-
 }
 
 a:visited {
@@ -203,7 +202,6 @@ a:hover, .menu-active {
     top: 0px;
     z-index: 2;
     background: linear-gradient(to bottom, rgba(255, 255, 255, .6) 0%, rgba(255, 255, 255, 0) 80%);
-    
 }
 
 #banner {
@@ -225,6 +223,10 @@ a:hover, .menu-active {
     transition: transform .4s ease;
     transform-origin: top left;
     font-weight: 400;
+}
+
+#logo a {
+    text-decoration-color: #00FEE2;
 }
 
 #logo a:visited {
