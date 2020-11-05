@@ -146,7 +146,7 @@
     
     #proj-gal {
         padding-left: 7.5%;
-        padding-right: 7.55%;
+        padding-right: 7.5%;
         padding-bottom: 5%;
     }
     
@@ -1335,18 +1335,18 @@ New About Page
         background-position: bottom;
     }
     #about-test-header {
-
+        margin-left: 2.5%;
         width: 100%;
     }
 
     #about-hello {
         padding-left: 5%;
-        width: 60%;
+        width: 57.5%;
         display: inline-block;
     }
     #about-test-bio {
         padding-left: 5%;
-        width: 60%;
+        width: 57.5%;
     }
     
     .hobbies {
@@ -1407,7 +1407,7 @@ New About Page
 .hobbies {
     margin-top: 5px;
     font-size: 15px;
-    width: 40%;
+    width: 42.5%;
     font-weight: 300;
     margin-bottom: 20px;
     float: left;
