@@ -50,9 +50,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
-    document.getElementsByClassName("logo")[0].classList.add('logo-shrink');
+    document.getElementById("logo-wrap").classList.add('logo-shrink');
   } else {
-    document.getElementsByClassName("logo")[0].classList.remove('logo-shrink');
+    document.getElementById("logo-wrap").classList.remove('logo-shrink');
   }
 }
 

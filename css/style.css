@@ -171,6 +171,52 @@
 }
 
 
+/* logo animation */
+
+#logo-wrap {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 75px;
+    position: relative;
+    width: 250px;
+    height: 70px;
+    font-weight: 400;
+    color: black;
+}
+
+.firstname {
+    position: absolute;
+    left: 0;
+    height: 70px;
+}
+.lastname-wrap {
+    left: 27px;
+    width: 240px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    transform-origin: left;
+    height: 70px;
+    transition: width .4s;
+}
+
+.lastname {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    transition: transform .4s;
+}
+
+
+.underline {
+    transition: width .4s;
+    left: 25px;
+    bottom: 3.5px;
+    position: absolute;
+    padding-top: 6px;
+    width: 250px;
+    background-color: #00FEE2;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -637,8 +683,15 @@ footer a
 
 /* THIS SECTION IS FOR PROJECT PAGE */
 @media only screen and (min-width: 801px) {
-    .logo-shrink {
-        transform:  scale(.4);
+    #logo-wrap.logo-shrink .lastname-wrap{
+    width: 40px;
+    }
+    #logo-wrap.logo-shrink .lastname {
+        transform: translateX(-184px);
+    }
+
+    #logo-wrap.logo-shrink .underline {
+        width: 40px;
     }
     .project-page-thumb img{
         height: 50vh;
@@ -717,8 +770,15 @@ footer a
     }
 }
 @media only screen and (max-width: 800px) {
-    .logo-shrink {
-        transform:  scale(.8);
+    #logo-wrap.logo-shrink .lastname-wrap{
+    width: 40px;
+    }
+    #logo-wrap.logo-shrink .lastname {
+        transform: translateX(-184px);
+    }
+
+    #logo-wrap.logo-shrink .underline {
+        width: 40px;
     }
     .project-page-thumb img{
         height: 40vh;

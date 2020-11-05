@@ -1,0 +1,75 @@
+.logo-wrap {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 75px;
+    position: relative;
+    width: 250px;
+    margin: 50px;
+    height: 70px;
+    font-weight: 400;
+    color: black;
+}
+
+.firstname {
+    position: absolute;
+    left: 0;
+    height: 70px;
+}
+.lastname-wrap {
+    left: 27px;
+    width: 250px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    transform-origin: left;
+    height: 70px;
+    transition: all .5s;
+}
+
+.logo-wrap:hover .lastname-wrap{
+    width: 40px;
+}
+
+.lastname {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    transition: .5s;
+}
+.logo-wrap:hover .lastname {
+    transform: translateX(-184px);
+}
+
+.logo-wrap:hover .underline {
+    width: 40px;
+}
+
+.underline {
+    transition: .5s;
+    left: 25px;
+    bottom: 3.5px;
+    position: absolute;
+    padding-top: 6px;
+    width: 250px;
+    background-color: #00FEE2;
+}
+
+.reftext {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    color: chartreuse
+}
+
+.ref {
+    display: none;
+    opacity: .8;
+    position: absolute;
+    top: -17px;
+    left: -18px;
+}
+.ref img {
+    height: 103px;
+    width: 103px;
+}
