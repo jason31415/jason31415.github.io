@@ -181,6 +181,7 @@
     height: 70px;
     font-weight: 400;
     color: black;
+    will-change: transform;
 }
 
 .firstname {
