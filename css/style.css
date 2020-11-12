@@ -702,6 +702,11 @@ footer a
         margin-left: 10%;
         display: inline-block;
     }
+    #project-page-text {
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
+
     .project-page-description {
         opacity: 0;
         white-space: normal;
@@ -737,37 +742,39 @@ footer a
     #project-page-team{
         font-size: 17px;
     }
-    #project-page-intro h1{
-        margin-left: 15%;
-        margin-right: 15%;
+    #project-page-intro {
         text-align: center;
-        margin-bottom: 10%;
-        font-size: 40px;
+        margin-bottom: 20%;
+        font-size: 30px;
         font-weight: 400;
+        line-height: 45px;
+        
     }
+    
     .content-block {
-        padding-left: 17.5%;
+        /*padding-left: 17.5%;
         padding-right: 17.5%;
         margin-bottom: 2.5%;
+        */
     }
     #project-page-text p{
         font-size: 20px;
     }
     .col-left {
         display: inline-block;
-        width: 47.5%;
+        width: 49%;
         transform: translateX(-200px);
         opacity: 0;
-        transition: opacity 1s, transform 1s;
+        transition: opacity .75s, transform .75s;
     }
 
     .col-right {
         display: inline-block;
         float: right;
-        width: 47.5%;
+        width: 49%;
         transform: translateX(200px);
         opacity: 0;
-        transition: opacity 1s, transform 1s;
+        transition: opacity .75s, transform .75s;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -794,6 +801,11 @@ footer a
         margin-right: 10%;
         transform: translateX(-100px);
     }
+    #project-page-text {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     .project-page-description {
         opacity: 0;
         white-space: normal;
@@ -831,7 +843,7 @@ footer a
     #project-page-team{
         font-size: 15px;
     }
-    #project-page-intro h1{
+    #project-page-intro {
         margin-top: 10%;
         margin-left: 10%;
         margin-right: 10%;
@@ -839,42 +851,36 @@ footer a
         margin-bottom: 10%;
         font-size: 25px;
         font-weight: 400;
+        line-height: 30px;
     }
+    
     .content-block {
-        padding-left: 10%;
+        /*padding-left: 10%;
         padding-right: 10%;
         margin-bottom: 2.5%;
-    }
-    #project-page-text p{
-        font-size: 18px;
+        */
     }
     .col-left {
         display: inline-block;
-        width: 47.5%;
+        width: 100%;
         transform: translateX(-100px);
         opacity: 0;
-        transition: opacity 1s, transform 1s;
+        transition: opacity .75s, transform .75s;
+        margin-bottom: 20px;
     }
 
     .col-right {
+        margin-bottom: 20px;
         display: inline-block;
         float: right;
-        width: 47.5%;
+        width: 100%;
         transform: translateX(100px);
         opacity: 0;
-        transition: opacity 1s, transform 1s;
+        transition: opacity .75s, transform .75s;
     }
 }
 
-#project-page-text a {
-    text-decoration: underline; 
-    color: black;
-}
 
-#project-page-text a:hover {
-    color: #00FEE2;
-    text-decoration: underline;
-}
 
 .project-content {
     width: 100%;
@@ -929,42 +935,46 @@ footer a
     font-weight: 300;
 }
 
+#project-page-text a {
+    text-decoration: underline; 
+    color: black;
+}
+
+#project-page-text a:hover {
+    color: #00FEE2;
+    text-decoration: underline;
+}
 .col-wide {
-    transition: opacity 1s;
+    transition: opacity .75s;
     opacity: 0;
     width: 100%;
 }
 
-.content-block h2 {
-    font-size: 25px;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    font-weight: 500;
-}
+
 
 .col-wide h2 {
     margin-top: 10%;
     margin-bottom: 5px;
 }
 
-.content-block p{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.appear {
-    opacity: 1;
+
+
+.content-block {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 0;
 }
 
-.slide-in {
-    transform: translateX(0px);
+.content-block::after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
 }
-.content-block {
-    clear: right;
-    display: block;
-    overflow: hidden;
-}
+
 .content-block img {
     width: 100%;
+    
 }
 .content-block video {
     width: 100%;
@@ -1422,3 +1432,119 @@ New About Page
     
 }
 
+
+/* NEW PROJECT LAYOUT */
+@media only screen and (min-width: 801px) {
+    .content-block-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 25px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .project-header-description {
+        display: inline-block;
+        width: calc((200%/3) - 2.5%);
+    }
+    
+    .project-header-title {
+        display: inline-block;
+        width: calc(100%/3);
+    }
+    .content-text {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    .content-block-header {
+        font-weight: 400;
+        font-size: 25px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .project-header-description {
+        display: block;
+    }
+    
+    .project-header-title {
+        font-size: 30px;
+        display: block;
+    }
+    .content-text {
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+}
+.content-text {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    opacity: 0;
+    transition: opacity .75s;
+}
+
+.content-text-title {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+
+.content-text-body {
+    line-height: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+.content-block i {
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-text-body i {
+    font-weight: 300;
+    font-size: 20px;
+    
+}
+.content-block-header {
+    font-weight: 00;
+    font-size: 25px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.project-header-title {
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: #00FEE2;
+    font-weight: 400;
+    line-height: 40px;  
+}
+
+.block-break {
+    margin-top: 20%;
+}
+.appear {
+    opacity: 1;
+}
+
+.slide-in {
+    transform: translateX(0px);
+}
+.spoiler {
+    opacity: 0;
+}
+
+.spoiler-alert {
+    font-weight: 400;
+    color: red;
+}
+.content-block:hover .spoiler{
+    opacity: 1;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jason Pi</title>
+        <link rel="icon" href="/images/jp_logo.png">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link rel ='stylesheet' type='text/css' href='/css/style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="banner-wrapper">
+            <div id="banner-wrapper">
+                <div id="banner">
+                    <div id="logo-wrap">
+                        <a href="/index.html">
+                            <div class="firstname">J</div>
+                            <div class="lastname-wrap">
+                            <div class="lastname">ason Pi</div>
+                            </div>
+                            <div class="underline"></div>
+                        </a>
+                    </div>
+                    <nav id="menu">
+                        <input type="checkbox" id="menu-hamburger"> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h2 class="menu-item"><a href="/index.html">work</a></h2>
+                        <h2 class="menu-item"><a href="/other.html">other</a></h2>
+                        <h2 class="menu-item"><a href="/about.html">about</a></h2>
+                    </nav>
+                </div>
+                <div class="full-menu">
+                    <nav>
+                        <h2 class="menu-item"><a href="/index.html">work</a></h2>
+                        <h2 class="menu-item"><a href="/other.html">other</a></h2>
+                        <h2 class="menu-item"><a href="/about.html">about</a></h2>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="project-content">
+            <div class="project-page-head">
+                <div class="project-page-thumb"><img src="/images/wobl/wobl_thumb.jpg"></div>
+                <div class="project-page-description">
+                    <div class="description-wrapper">
+                        <div id="project-page-title">Wobl Bobl</div>
+                        <div id="project-page-tags">hardware prototype | robotics</div>
+                        <div id="project-page-date">Jan 19 - Present</div>
+                    </div>
+                </div>
+            </div>
+            <div id="project-page-text">
+                <div id="project-page-intro">
+                    <h1>Inspired by swarm robots and emotive machines, I wanted to create a pair of robots that would be able to interact without the need of human interaction.</h1>
+                </div>
+                <div class="content-block">
+                    <div class="col-wide fade">
+                        <h2>Defining functionality</h2>
+                        <p>I needed to map out the inputs, outputs, and design a communication protocol that would allow the two robots to contain the code to both send and receive signals.</p>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-left fade slide">
+                        <img src="/images/wobl/sketch-1.jpg">
+                    </div>
+                    <div class="col-right fade slide">
+                        <img src="/images/wobl/sketch-2.jpg">
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-wide fade">
+                        <p>I was able to salvage all the materials for the body from the design studios and Walgreens. There's a paper cup to hold the electronics, sculpture wire to add support, a ping pong ball for the head, and a fuzzy sock to package it all together. </p>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-left fade slide">
+                        <img src="/images/wobl/components-min.jpg">
+                    </div>
+                    <div class="col-right fade slide">
+                        <img src="/images/wobl/insides-1-min.JPG">
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-left fade slide">
+                        <h2>Infrared</h2>
+                        <p>While to decide the communication protocol, I decided to go with a completely analog method, rather than using wifi or bluetooth, This made callibration and setup a lot more straightforward.</p>
+                    </div>
+                    <div class="col-right fade slide">
+                        <img src="/images/wobl/comp-3.gif">
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-left fade slide">
+                        <img src="/images/wobl/comp-2.gif">
+                    </div>
+                    <div class="col-right fade slide">
+                        <p>Debugging IR issues was a hassle, though. I wouldn't know if problems were a result of a software or hardware issue, or even if the sensors were faulty to begin with. <i>Pro tip: smoke usually means there's something wrong with the circuitry</i></p>
+                        
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-wide fade">
+                        <img src="/images/wobl/demo.gif">
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-wide fade">
+                        <h2>Iteration 2</h2>
+                        <p>The soft body of the original robot was a little too fragile; wires came loose and it required constant readjustments. There also wasn't enough voltage to drive the bobbing mechanism while running on a 3.7 volt LiPo battery, so I decided to move on to a solid 3D printed body.</p>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-wide fade">
+                        <img src="/images/wobl/body_iterations.jpg">
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-left fade slide">
+                        <img src="/images/wobl/final_sketch.png">
+                    </div>
+                    <div class="col-right fade slide">
+                        <p>After sketching out a variety of different forms for the outer shell, I chose one that I felt would be the most feasible to 3D print and house my components.</p>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-wide fade">
+                        <h2>Standardized Assembly</h2>
+                        <p>Building in pairs forced me to standardize my process so that it could be replicated flawlessly for both robots; this applied to both the circuitry and software.</p>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-left fade slide">
+                        <img src="/images/wobl/assem-1-min.jpg">
+                    </div>
+                    <div class="col-right fade slide">
+                        <img src="/images/wobl/assem-2-min.jpg">
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-left fade slide">
+                        <img src="/images/wobl/comp-3.jpg">
+                    </div>
+                    <div class="col-right fade slide">
+                        <p>Working with a larger footprint also meant I could add more features. The ping-pong ball was now pressable, allowing me to toggle between different settings, even a debugging mode. There was now also a speaker. Instead of bobbing their heads, I had to settle with them sending and receiving musical notes.</p>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-left fade slide">
+                        <img src="/images/wobl/wobl_thumb.jpg">
+                    </div>
+                    <div class="col-right fade slide">
+                        <img src="/images/wobl/edit_new.jpg">
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="col-wide fade">
+                        <video controls><source src="/images/wobl/roboticsymphony.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-left">
+                <div id="signature">🚴🏼... designed by jason pi </div>
+                <div><a href="https://www.linkedin.com/in/jason-p-2a52a5110/" target="_blank">linkedin</a></div>
+                <div><a href="mailto:jasonpi.jp@gmail.com?Subject=Hello" target="_blank">email</a></div>
+            </div>
+            <div id="version">ver. 4.1</div>
+        </footer>
+        <script type=text/javascript src="/js/project.js"></script>
+    </body>
+    
+</html>
