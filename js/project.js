@@ -57,20 +57,30 @@ function scrollFunction() {
 }
 
 //check if menu opened 
-document.getElementById("menu-hamburger").addEventListener("click", toggleMenu);
+
+var menu_hamburger = document.getElementById("menu-hamburger");
+var menu_full = document.getElementsByClassName("full-menu");
+
 
 function toggleMenu() {
     
-    if (document.getElementById("menu-hamburger").checked == true) {
-        document.getElementsByClassName("full-menu")[0].style.display = "block";
+    if (menu_hamburger.checked == true) {
+        menu_full[0].style.display = "block";
         setTimeout(()=>{
-            document.getElementsByClassName("full-menu")[0].classList.add("menu-open");
+            menu_full[0].classList.add("menu-open");
         },20);
         document.body.style.overflowY = "hidden";
     }
     else {
-        document.getElementsByClassName("full-menu")[0].classList.remove("menu-open");
-        document.getElementsByClassName("full-menu")[0].style.display = "none";
+        
+        menu_full[0].classList.remove("menu-open");
+        menu_full[0].style.display = "none";
         document.body.style.overflowY = "auto";
     }
+}
+
+
+//test if menu is loaded
+if (menu_hamburger) {
+    menu_hamburger.addEventListener("click", toggleMenu);
 }
