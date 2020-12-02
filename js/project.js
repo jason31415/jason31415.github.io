@@ -1,3 +1,20 @@
+// Reveal thumbnail    
+window.onload = () => {
+    document.getElementsByClassName('project-page-thumb')[0].classList.add('thumb-transition');
+    document.getElementsByClassName('project-page-description')[0].classList.add('description-grow');
+};
+
+// resize logo on scroll
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+    document.getElementById("logo-wrap").classList.add('logo-shrink');
+  } else {
+    document.getElementById("logo-wrap").classList.remove('logo-shrink');
+  }
+};
+
 
 // Only use animations if browser is chrome
 
@@ -59,20 +76,4 @@ else {
     });
 }
 
-    
-window.onload = () => {
-    document.getElementsByClassName('project-page-thumb')[0].classList.add('thumb-transition');
-    document.getElementsByClassName('project-page-description')[0].classList.add('description-grow');
-};
-
-//resize logo on scroll
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
-    document.getElementById("logo-wrap").classList.add('logo-shrink');
-  } else {
-    document.getElementById("logo-wrap").classList.remove('logo-shrink');
-  }
-};
 
