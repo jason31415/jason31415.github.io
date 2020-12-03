@@ -865,7 +865,7 @@ footer a
     .col-left {
         display: inline-block;
         width: 100%;
-        -webkit-transform: translateX(-100px);
+        -webkit-transform: translateX(0px);
         opacity: 0;
         transition: opacity .75s, transform .75s;
         margin-bottom: 20px;
@@ -876,7 +876,7 @@ footer a
         display: inline-block;
         float: right;
         width: 100%;
-        -webkit-transform: translateX(100px);
+        -webkit-transform: translateX(0px);
         opacity: 0;
         transition: opacity .75s, transform .75s;
     }
